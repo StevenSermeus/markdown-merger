@@ -17,3 +17,13 @@ To include a file, use the following notation:
 ```markdown
 ![$include-md](path/to/file.md)
 ```
+
+## Limitations
+
+- The tool will not do import recusion, so you can't include a file that includes another file.
+
+- The tool will not update the links in the files, so if you include a image, it will not be displayed in the output file. So you have to setup the links in the files to point to the correct location after the merge.
+
+## Todo
+
+- [ ] Add support for images paths update
